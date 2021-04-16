@@ -4,130 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>SMA Negeri 1 Banjarbaru</title>
-</head>
-<body class="bg-primary">
+    <link rel="stylesheet" href="styles.css">
     
-    <div><!-- content wrapper-->
-        <div class="container mx-auto my-6 text-white uppercase"> <!--nav start-->
-            <nav class="flex justify-between items-center">
-                <div style="height: 40px;" class="font-black"> <!--logo-->
-                    <h1 class="flex items-center">
-                        <img class="mr-5" src="img/image 1.svg" alt="">
-                        <a href="/">SMA NEGERI 1 BANJARBARU</a>
-                    </h1>
-                </div>
-                <ul class="hidden md:flex font-bold items-center space-x-12 text-sm "> <!--Secondary nav-->
-                    <li>
-                        <a class="hover:text-secondary" href="#">
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="hover:text-secondary" href="#">
-                            <span>Profile Sekolah</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="hover:text-secondary flex items-center space-x-1.5" href="#">
-                            <span>Akademik</span>
-                            <span>
-                                <img src="img/Arrow - Down 2.svg" alt="">
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="hover:text-secondary" href="#">
-                            <span>Berita</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="hover:text-secondary" href="#">
-                            <span>Kontak</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div> <!--end of nav-->
-        
-        <main>
-            <header>
-                <span>
-                    The great place to be smart
-                </span>
-
-                <h1>
-                    SMA NEGERI 1 BANJARBARU
-                </h1>
-
-                <div>
-                    <div> <!--search box-->
-                        <p> Apa yang anda cari?</p>
-                        
-                        <div>
-                            Cari
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <div> <!--container infographic-->
-                <ul>
-                    <div>
-                        <h3> <!--info siswa-->
-
-                        </h3>
-                        <li>
-                            <p>Siswa</p>
-                        </li>
-                    </div>
-                    <div>
-                        <h3> <!--info guru-->
-
-                        </h3>
-                        <li>
-                            <p>Guru</p>
-                        </li>
-                    </div>
-                    <div>
-                        <h3> <!--info kelas-->
-
-                        </h3>
-                        <li>
-                            <p>Kelas</p>
-                        </li>
-                    </div>
-                </ul>
-            </div>
+</head>
+<!-- navbar -->
+<nav class="bg-gray-100 font-body">
+    <div class="max-w-6xl mx-auto py-6 px-4 uppercase">
+        <div class="flex justify-between">
+            <!-- left navbar -->
             <div>
-                <h4>Sambutan Kepala Sekolah</h4>
-
-                <div>
-                    <!--illustrate/gambar kepala sekolah-->
-                    <div>
-                        <img src="img/Classroom.svg" alt="Ilustrasi Kepala Sekolah">
-
-                        <div>
-                            <span>Kepala Sekolah SMA Negeri 1 Banjarbaru</span>
-                        </div>
-                    </div>
-                    <!--info sambutan-->
-                    <div>
-                        <p>
-                            SMA Negeri (SMAN) 1 Banjarbaru, merupakan salah satu Sekolah Menengah Atas Negeri yang ada di Kota Banjarbaru, Provinsi Kalimantan Selatan, Indonesia. Sama dengan SMA pada umumnya di Indonesia masa pendidikan sekolah di SMAN 1 Banjarbaru ditempuh dalam waktu tiga tahun pelajaran, mulai dari Kelas X sampai Kelas XII.
-                        </p>
-
-                        <div>
-                            <div>
-                                Selengkapnya
-                            </div>
-                        </div>
-                    </div>
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-5">
+                    <img src="./img/image 1.svg" alt="Logo SMA Negeri 1 Banjarbaru">
+                    <span class="text-lg font-extrabold">SMA NEGERI 1 BANJARBARU</s>
+                </a>    
+            </div>  
+            <!-- Secondary Nav -->
+            <div class="hidden md:flex items-center space-x-12 text-sm font-semibold">
+                <a href="#" class="hover:text-secondary transition duration-300">Home</a>
+                <a href="#" class="hover:text-secondary transition duration-300">Profile Sekolah</a>
+                <div class="flex items-center space-x-1.5">
+                    <a href="#" class="hover:text-secondary transition duration-300">Akademik</a>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
                 </div>
+                <a href="#" class="hover:text-secondary transition duration-300">Berita</a>
+                <a href="#" class="hover:text-secondary transition duration-300">Kontak</a>
             </div>
-        </main>
 
-
+            <!-- mobile button -->
+            <div class="md:hidden flex items-center">
+                <button class="mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="#" class="block py-1.5 font-semibold text-sm hover:text-secondary transition duration-300">Home</a>
+            <a href="#" class="block py-1.5 font-semibold text-sm hover:text-secondary transition duration-300">Profile Sekolah</a>
+            <div class="flex items-center space-x-1.5">
+                <a href="#" class="block py-1.5 font-semibold text-sm hover:text-secondary transition duration-300">Akademik</a>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </span>
+            </div>
+            <a href="#" class="block py-1.5 font-semibold text-sm hover:text-secondary transition duration-300">Berita</a>
+            <a href="#" class="block py-1.5 font-semibold text-sm hover:text-secondary transition duration-300">Kontak</a>
+        </div>
     </div>
+</nav> <!-- end of navbar -->
+<body>
+    
+    <script>
+        // grab everything we need
+        const btn = document.querySelector(".mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu")
+
+        // add event listener
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
 </body>
 </html>
