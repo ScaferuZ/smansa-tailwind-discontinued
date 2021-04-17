@@ -9,8 +9,8 @@
     
 </head>
 <!-- navbar -->
-<nav class="bg-gray-100 font-body">
-    <div class="max-w-6xl mx-auto py-6 px-4 uppercase">
+<nav class="bg-primary font-body">
+    <div class="max-w-6xl mx-auto py-2 px-4 uppercase">
         <div class="flex justify-between">
             <!-- left navbar -->
             <div>
@@ -24,13 +24,20 @@
             <div class="hidden md:flex items-center space-x-12 text-sm font-semibold">
                 <a href="#" class="hover:text-secondary transition duration-300">Home</a>
                 <a href="#" class="hover:text-secondary transition duration-300">Profile Sekolah</a>
-                <div class="flex items-center space-x-1.5">
-                    <a href="#" class="hover:text-secondary transition duration-300">Akademik</a>
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </span>
+                <div class="">
+                    <div class="flex items-center space-x-1.5 relative mx-2">
+                        <a href="#" class="hover:text-secondary transition duration-300">Akademik</a>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                    </div>
+                    <!-- hover menu -->
+                    <div class="bg-primary absolute mt-2 opacity-0 pointer-events-none transition duration-300">
+                        <a href="" class="py-2 pr-4 mx-2 block">Peserta Didik</a>
+                        <a href="" class="py-2 pr-4 mx-2 block">Jadwal Pelajaran</a>
+                    </div>
                 </div>
                 <a href="#" class="hover:text-secondary transition duration-300">Berita</a>
                 <a href="#" class="hover:text-secondary transition duration-300">Kontak</a>
@@ -47,12 +54,12 @@
         </div>
         <!-- mobile menu -->
         <div class="mobile-menu hidden md:hidden">
-            <a href="#" class="block py-1.5 font-semibold text-sm hover:text-secondary transition duration-300">Home</a>
+            <a href="#" class="block py-1.5 mt-3 font-semibold text-sm hover:text-secondary transition duration-300">Home</a>
             <a href="#" class="block py-1.5 font-semibold text-sm hover:text-secondary transition duration-300">Profile Sekolah</a>
             <div class="flex items-center space-x-1.5">
                 <a href="#" class="block py-1.5 font-semibold text-sm hover:text-secondary transition duration-300">Akademik</a>
                 <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
                 </span>
@@ -64,15 +71,6 @@
 </nav> <!-- end of navbar -->
 <body>
     
-    <script>
-        // grab everything we need
-        const btn = document.querySelector(".mobile-menu-button");
-        const menu = document.querySelector(".mobile-menu")
-
-        // add event listener
-        btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
